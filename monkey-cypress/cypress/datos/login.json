@@ -1,0 +1,8 @@
+{
+    "EmailValido": "krakenCypressTest@automatizacion.com.co",
+    "PasswordValido": "KrakenCypress123456@",
+    "PasswordNoValido": "123456789@Clave",
+    "EmailVacio": "",
+    "PasswordVacio": "",
+    "NoEsEmail": "Prueba"
+}

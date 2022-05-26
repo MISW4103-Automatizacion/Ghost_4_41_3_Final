@@ -4,7 +4,7 @@ var fs = require('fs')
 
 const url = Cypress.config('baseUrl') || "http://localhost:2368/ghost/#/dashboard"
 const appName = Cypress.env('appName')|| "Ghost 4.41.1"
-const events = Cypress.env('events')|| 500
+const events = Cypress.env('events')|| 400
 const delay = Cypress.env('delay') || 100
 var seed = Cypress.env('seed')
 
@@ -16,6 +16,13 @@ const pct_spkeys = Cypress.env('pctSpKeys') || 16
 const pct_pgnav = Cypress.env('pctPgNav') || 16 
 
 const LOG_FILENAME = "../../../results/monkey-execution.html"
+
+const pageLogin = require("../../funcionalidades/Login");
+const registerUser = require("../../funcionalidades/registrarUsuario");
+const pageMenuLeftAplicacion = require("../../funcionalidades/MenuLeftAplicacion");
+
+const datos = require("../../datos/login.json");
+let email;
 
 /*
  Bob Jenkins Small Fast, aka smallprng pseudo random number generator is the chosen selection for introducing seeding in the tester
@@ -75,21 +82,45 @@ var focused = false
 
 
 
-function loginUser(cy, email, password) {
-    cy.get('#ember7').type(email)
-    cy.get('#ember9').type(password)
-    cy.get('#ember11').click()
-    cy.wait(1000)
-  }
+beforeEach(() => {
 
-  beforeEach(()=>{
 
-    cy.visit('http://localhost:2368/ghost/');
- 
-    // loginUser(cy, 'gcastrot82@hotmail.com', 'Ger@rd0123');
-    loginUser(cy, 'krakenCypressTest@automatizacion.com.co', 'KrakenCypress123456@');
+
+    cy.clearCookies();
+    cy.visit("/");
+
+    cy.get("main").then(($main) => {
+      if ($main.find("form").length > 0) {
+        if ($main.find("form")[0].id == "setup") {
+          cy.screenshot("Escenario01_registrarUsuario_ ");
+          registerUser.registerUser(
+            cy,
+            Cypress.env("NAMEBLOG"),
+            Cypress.env("FULLNAME"),
+            Cypress.env("USER"),
+            Cypress.env("PASSWORD")
+          );
+          cy.wait(3000);
+          pageMenuLeftAplicacion.clicAvatar(cy);
+          cy.wait(1000)
+          pageMenuLeftAplicacion.clicSignOut(cy);
+        }
+      }
+    });
+
+    pageLogin.eMail(cy, datos.EmailValido);
+    pageLogin.password(cy, datos.PasswordValido);
+    pageLogin.clicSignIn(cy);
     cy.wait(5000);
-})
+
+    if (Cypress.env("isRegresionVisual") == false) {
+      email = "prueba@hotmail.com";
+    } else {
+      email = "pruebaRegresion@regresion.com.co";
+    }
+  });
+
+
 
 
 
@@ -538,6 +569,10 @@ function randomEvent(){
 var pending_events = [,,,,,] 
 
 describe( `${appName} under monkeys`, function() {
+
+
+
+
     //Listener
     cy.on('uncaught:exception', (err)=>{
         cy.task('genericLog', {'message':`An exception occurred: ${err}`});

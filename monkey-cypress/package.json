@@ -24,6 +24,8 @@
   },
   "dependencies": {
     "cypress": "^4.2.0",
-    "faker": "^4.1.0"
+    "cypress-xpath": "^1.6.2",
+    "faker": "^4.1.0",
+    "xpath": "^0.0.32"
   }
 }
