@@ -8,7 +8,7 @@
 
 [Retrospectiva](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Retrospectiva)
 
-### Ejecutar procesos de pruebas
+## Ejecutar procesos de pruebas
 
 ### Especificaciones de la máquina
 
