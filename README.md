@@ -31,3 +31,10 @@
 | -------------------- | ----------------------------------- |
 | Nombre              | Ghost |
 | Version             | 4.30.0 |
+
+
+### Comandos de ejecucion de la Semana 1
+| Característica     | Comando                      |
+| -------------------- | ----------------------------------- |
+| Proceso normal              | ./ejecutar_proceso_normal.sh |
+| Proceso reconocimiento             | ./ejecutar_proceso_monkey.sh |
