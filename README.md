@@ -34,7 +34,7 @@
 
 
 ### Comandos de ejecucion de la Semana 1
-| Característica     | Comando                      |
-| -------------------- | ----------------------------------- |
-| Proceso normal              | ./ejecutar_proceso_normal.sh |
-| Proceso reconocimiento             | ./ejecutar_proceso_monkey.sh |
+| Característica     | Comando                      | Resultados |
+| -------------------- | ----------------------------------- |------|
+| Proceso normal              | ./ejecutar_proceso_normal.sh | cd cypress/test/cypress/screenshots |
+| Proceso reconocimiento             | ./ejecutar_proceso_monkey.sh |cd monkey-cypress/cypress/videos/monkey |
