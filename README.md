@@ -12,6 +12,8 @@
 
 [Pros y contras de resemble](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Pros-y-contras-Resemble).
 
+[Ver Issues](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/issues)
+
 [Retrospectiva](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Retrospectiva)
 
 ## Ejecutar procesos de pruebas
