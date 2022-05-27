@@ -2,7 +2,7 @@
 
 [Ver entrega final PDF y Video](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Entrega-final-Grupo-12)
 
-[Resultados pruebas manuales](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Pruebas-Manuales).
+[Resultados pruebas manuales](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Resultado-de-pruebas-manuales).
 
 [Resultados pruebas E2E y aceptación](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Resultado-pruebas-E2E-y-aceptaci%C3%B3n).
 
