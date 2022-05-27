@@ -54,7 +54,7 @@ echo "*** Se eliminan las carpetas de Ghost ***"
 rm -rf $DIRECTORIOACTUAL/ghost_4.41.3
 rm -rf $DIRECTORIOACTUAL/ghost_4.30.0
 
-echo "*** Elimina la carpeta para poner las imagenes de la ejecucion de ghost 4.41.3***"
+echo "*** Elimina la carpeta para poner las evidencias de la ejecucion de ghost 4.41.3***"
 rm -rf $DIRECTORIOACTUAL/resultadoMonkey
 mkdir $DIRECTORIOACTUAL/resultadoMonkey
 cp -r $DIRECTORIOACTUAL/monkey-cypress/result $DIRECTORIOACTUAL/resultadoMonkey
