@@ -6,13 +6,13 @@
 
 [Resultados pruebas E2E y aceptación](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Resultado-pruebas-E2E-y-aceptaci%C3%B3n).
 
+[Ver Issues](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/issues)
+
 [Pros y contras de cypress](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Pros-y-contras-de-Cypress).
 
 [Pros y contras de monkey-cypress](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Pros-y-Contras-de-Monkey---Cypress).
 
 [Pros y contras de resemble](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Pros-y-contras-Resemble).
-
-[Ver Issues](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/issues)
 
 [Retrospectiva](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Retrospectiva)
 
