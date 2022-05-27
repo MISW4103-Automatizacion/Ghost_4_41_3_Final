@@ -47,5 +47,5 @@ Se debe ejecutar el comando **./Instalar_paquetes_previos.sh** para instalar las
 | Técnica     | Comando                      | Resultados |
 | -------------------- | ----------------------------------- |------|
 | Proceso E2E y aceptación              | ./ejecutar_proceso_normal.sh | cd cypress/test/cypress/screenshots |
-| Proceso reconocimiento monkey            | ./ejecutar_proceso_monkey.sh |cd monkey-cypress/cypress/videos/monkey |
+| Proceso reconocimiento monkey            | ./ejecutar_proceso_monkey.sh |cd monkey-cypress/results |
 | Proceso de regresión visual resemble | ./ejecutarRegresionVisualCypress.sh | cd reporteFinal_Cypress|
