@@ -55,6 +55,10 @@ cypress/test/cypress2.json
 
 monkey-cypress/cypress/integration/monkey/monkey.js
 
+### Nota
+
+Una vez comience el proceso debe dejar que termine ya que esto puede alterar el funcionamiento de otros scripts.
+
 ### Comandos de ejecucion de la Semana 1
 | Técnica     | Comando                      | Resultados |
 | -------------------- | ----------------------------------- |------|
