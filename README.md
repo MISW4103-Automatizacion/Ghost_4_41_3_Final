@@ -48,8 +48,11 @@ Se debe ejecutar el comando **./Instalar_paquetes_previos.sh** para instalar las
 Importante antes de ejecutar estos comandos asegurese que su maquina no esta ejecutando ninguna version de ghots, estos script aseguran que la ejecucion se realice desde la url que genera por defecto esta herramienta http://localhost:2368/ghost/. en caso que por fuerza mayor necesite configurar otro puerto de la aplicación por favor debe realizarlos en los sigientes archivos:
 
 /cypress/test/cypress.json
+
 /cypress/test/cypress1.json
+
 /cypress/test/cypress2.json
+
 /monkey-cypress/cypress/integration/monkey/monkey.js
 
 ### Comandos de ejecucion de la Semana 1
