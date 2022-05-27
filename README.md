@@ -1,11 +1,16 @@
 ### Ghost_4_41_3_Final Proceso final GRUPO 12
+
 [Ver entrega final PDF y Video](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Entrega-final-Grupo-12)
 
-[Ver pruebas manuales](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Pruebas-Manuales).
+[Resultados pruebas manuales](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Pruebas-Manuales).
+
+[Resultados pruebas E2E y aceptación](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Resultado-pruebas-E2E-y-aceptaci%C3%B3n).
 
 [Pros y contras de cypress](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Pros-y-contras-de-Cypress).
 
 [Pros y contras de monkey-cypress](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Pros-y-Contras-de-Monkey---Cypress).
+
+[Pros y contras de resemble](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Pros-y-contras-Resemble).
 
 [Retrospectiva](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Retrospectiva)
 
