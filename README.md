@@ -1,4 +1,5 @@
 ### Ghost_4_41_3_Final Proceso final GRUPO 12
+[Ver entrega final PDF y Video](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Entrega-final-Grupo-12)
 
 [Ver pruebas manuales](https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final/wiki/Pruebas-Manuales).
 
