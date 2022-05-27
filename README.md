@@ -32,6 +32,7 @@
 | Nombre              | Ghost |
 | Version             | 4.30.0 |
 
+### Instalar prerrequisitos (Recomendación del tutor).
 Se debe ejecutar el comando ./Instalar_paquetes_previos.sh para instalar las herramientas de ejecución de los scripts posteriores.
 
 ### Comandos de ejecucion de la Semana 1
