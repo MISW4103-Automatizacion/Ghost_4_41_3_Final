@@ -18,6 +18,8 @@
 
 ## Ejecutar procesos de pruebas
 
+Realizar git clone https://github.com/MISW4103-Automatizacion/Ghost_4_41_3_Final.git del repositorio e ingresar a la carpeta cd Ghost_4_41_3_Final
+
 ### Especificaciones de la máquina
 
 | Característica      | Especificación                      |
