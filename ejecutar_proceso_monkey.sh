@@ -7,8 +7,8 @@ echo "*** Ejecucion cypress ***"
 DIRECTORIOACTUAL=$PWD
 DIRECTORIOCYPRESS=$DIRECTORIOACTUAL/monkey-cypress
 
-echo "*** Eliminar directorio imagenes ***"
-rm -rf $DIRECTORIOCYPRESS/cypress/screenshots
+echo "*** Eliminar directorio videos ***"
+rm -rf $DIRECTORIOACTUAL/monkey-cypress/cypress/videos
 
 if [ -d  "$DIRECTORIOACTUAL/ghost_4.41.3" ]; then
    echo "*** se detiene Ghost version 4.41.3 ***"
