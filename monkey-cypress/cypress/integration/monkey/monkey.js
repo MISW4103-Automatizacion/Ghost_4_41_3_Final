@@ -4,7 +4,7 @@ var fs = require('fs')
 
 const url = Cypress.config('baseUrl') || "http://localhost:2368/ghost/#/dashboard"
 const appName = Cypress.env('appName')|| "Ghost 4.41.1"
-const events = Cypress.env('events')|| 2000
+const events = Cypress.env('events')|| 1000
 const delay = Cypress.env('delay') || 100
 var seed = Cypress.env('seed') || 1233
 
