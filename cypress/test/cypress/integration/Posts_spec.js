@@ -32,9 +32,9 @@ describe('Escenarios funcionalidad Post.', () => {
           email = 'pruebaRegresion@regresion.com.co';
       }
       pageLogin.eMail(cy, datos.EmailValido)
-        pageLogin.password(cy, datos.PasswordValido)
-        pageLogin.clicSignIn(cy)
-        cy.wait(3000)
+      pageLogin.password(cy, datos.PasswordValido)
+      pageLogin.clicSignIn(cy)
+      cy.wait(3000)
   })
 
   it(`Escenario 1. Prueba positiva. Crear un post con título normal y texto normal`, () => {

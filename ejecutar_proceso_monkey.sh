@@ -35,3 +35,24 @@ ghost install 4.41.3 --local
 cd $DIRECTORIOACTUAL/monkey-cypress
 echo "*** Se comienza con la ejecución de las pruebas monkey de la versión de ghost 4.41.3 ***"
 cypress run
+
+if [ -d  "$DIRECTORIOACTUAL/ghost_4.41.3" ]; then
+   echo "*** se detiene Ghost version 4.41.3 ***"
+   cd $DIRECTORIOACTUAL/ghost_4.41.3
+   ghost stop
+   cd $DIRECTORIOACTUAL
+fi
+
+if [ -d  "$DIRECTORIOACTUAL/ghost_4.30.0" ]; then
+   echo "*** se detiene Ghost version 4.30.0 ***"
+   cd $DIRECTORIOACTUAL/ghost_4.30.0
+   ghost stop
+   cd $DIRECTORIOACTUAL
+fi
+
+echo "*** Se eliminan las carpetas de Ghost ***"
+rm -rf $DIRECTORIOACTUAL/ghost_4.41.3
+rm -rf $DIRECTORIOACTUAL/ghost_4.30.0
+
+
+echo "*** Finaliza el reporte ***"

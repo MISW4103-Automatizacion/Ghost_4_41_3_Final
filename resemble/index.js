@@ -23,7 +23,7 @@ async function executeTest(){
           }
           for(let i=0; i < archivosCompare.length -1; i++) {
             let FileBefore = archivosCompare[i];
-            let FileAfter = archivosCompare[i].replace('ghost1_','ghost2_')
+            let FileAfter = archivosCompare[i].replace('Ghost_1_','Ghost_2_')
             const data = await compareImages(
               fs.readFileSync(FileBefore),
               fs.readFileSync(FileAfter),
@@ -38,10 +38,10 @@ async function executeTest(){
               analysisTime: data.analysisTime
             }
             let directorio = archivosCompare[i].split('/')[archivosCompare[i].split('/').length -2];            
-            let archivoCompare = archivosCompare[i].replace('.png','').replace('ghost1_','') + `_compare-${b}.png`;
+            let archivoCompare = archivosCompare[i].replace('.png','').replace('Ghost_1_','') + `_compare-${b}.png`;
             fs.writeFileSync(archivoCompare, data.getBuffer());
             fs.copyFileSync('./results/index.css', '../reporteFinal_Cypress/' + directorio + '/index.css');
-            fs.writeFileSync('../reporteFinal_Cypress/' + directorio + '/report.html', createReport(datetime, resultInfo, FileBefore, FileAfter, archivoCompare.replace('ghost2_', '')));
+            fs.writeFileSync('../reporteFinal_Cypress/' + directorio + '/report.html', createReport(datetime, resultInfo, FileBefore, FileAfter, archivoCompare.replace('Ghost_2_', '')));
           }
         });
     }

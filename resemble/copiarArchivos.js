@@ -16,40 +16,32 @@ async function executeTest(){
         if(!b in ['chromium']){
             return;
         }
+
+        
                 
-        filewalker("../imagenes1/screenshots", async function(err, archivos){
+        filewalker("../imagenesregresion1", async function(err, archivos){
           if(err){
               throw err;
           }
-          
-          for(let i = 0; i < archivos.length -1; i++) {       
-                        
-            let directorio = archivos[i].split('/')[archivos[i].split('/').length-1].replace('(','').replace(')','').replace(' ','').replace('.png','');            
+          for(let i = 0; i < archivos.length; i++) {
             
-            if(fs.existsSync('../reporteFinal_Cypress/' + directorio)){
+            let directorio =  archivos[i].split('/')[archivos[i].split('/').length - 1].replace('.png','').split('_')[archivos[i].split('/')[archivos[i].split('/').length-1].replace('.png','').split('_').length -1] + '/';
+            let nomArchivo = archivos[i].split('/')[archivos[i].split('/').length - 1];
+            
+            if(!fs.existsSync('../reporteFinal_Cypress/' + directorio)){
               fs.mkdirSync('../reporteFinal_Cypress/' + directorio);
             }
-            
-            directorio = '/' + directorio + '_' + i;
-
-            console.log(directorio)
-            
-            fs.mkdirSync('../reporteFinal_Cypress/' + directorio);
-  
-            let nombreArchivo = 'ghost1_' + archivos[i].split('/')[archivos[i].split('/').length-1].replace('(','').replace(')','').replace(' ','');
                         
-            
-            fs.copyFile(archivos[i], '../reporteFinal_Cypress/' + directorio + '/' + nombreArchivo, function (err) {
+            fs.copyFile(archivos[i], '../reporteFinal_Cypress/' + directorio + nomArchivo, function (err) {
               if (err) return console.error(err)
               console.log('success!')
             });
-            let nombreArchivo2 = 'ghost2_' + archivos[i].replace('imagenes1', 'imagenes2').split('/')[archivos[i].replace('imagenes1', 'imagenes2').split('/').length-1].replace('(','').replace(')','').replace(' ','');
-            
-            fs.copyFile(archivos[i].replace('imagenes1', 'imagenes2'), '../reporteFinal_Cypress/' + directorio + '/' + nombreArchivo2, function (err) {
+
+            fs.copyFile(archivos[i].replace('imagenesregresion1','imagenesregresion2').replace('Ghost_1','Ghost_2'), '../reporteFinal_Cypress/' + directorio + nomArchivo.replace('Ghost_1','Ghost_2'), function (err) {
               if (err) return console.error(err)
               console.log('success!')
-            });            
-          }          
+            });
+          }
         });
     }
     
