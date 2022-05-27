@@ -34,7 +34,7 @@
 | Nombre              | Ghost |
 | Version             | 4.41.3 |
 
-### Aplicación a comparar regresión visual Semana 8
+### Aplicación a comparar regresión
 | Característica     | Especificación                      |
 | -------------------- | ----------------------------------- |
 | Nombre              | Ghost |
