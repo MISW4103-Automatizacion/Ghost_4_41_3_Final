@@ -32,10 +32,12 @@
 | Nombre              | Ghost |
 | Version             | 4.30.0 |
 
+Se debe ejecutar el comando ./Instalar_paquetes_previos.sh para instalar las herramientas de ejecución de los scripts posteriores.
 
 ### Comandos de ejecucion de la Semana 1
 | Técnica     | Comando                      | Resultados |
 | -------------------- | ----------------------------------- |------|
+| Proceso normal              | ./ejecutar_proceso_normal.sh | cd cypress/test/cypress/screenshots |
 | Proceso normal              | ./ejecutar_proceso_normal.sh | cd cypress/test/cypress/screenshots |
 | Proceso reconocimiento             | ./ejecutar_proceso_monkey.sh |cd monkey-cypress/cypress/videos/monkey |
 | Proceso de regresión visual | ./ejecutarRegresionVisualCypress.sh | cd reporteFinal_Cypress|
