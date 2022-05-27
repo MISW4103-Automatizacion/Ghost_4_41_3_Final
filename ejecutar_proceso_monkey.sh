@@ -1,11 +1,11 @@
 #!/bin/bash
 echo "###########################################################"
-echo "***  Comienza la ejecución normal del proceso ***"
+echo "***  Comienza la ejecución monkey del proceso ***"
 echo "############################################################"
 
 echo "*** Ejecucion cypress ***"
 DIRECTORIOACTUAL=$PWD
-DIRECTORIOCYPRESS=$DIRECTORIOACTUAL/cypress/test
+DIRECTORIOCYPRESS=$DIRECTORIOACTUAL/monkey-cypress
 
 echo "*** Eliminar directorio imagenes ***"
 rm -rf $DIRECTORIOCYPRESS/cypress/screenshots
@@ -32,12 +32,6 @@ echo "*** Se instala la versión de ghost 4.41.3 ***"
 cd $DIRECTORIOACTUAL/ghost_4.41.3
 ghost install 4.41.3 --local
 
-cd $DIRECTORIOACTUAL/cypress/test
-echo "*** Se comienza con la ejecución de las pruebas de ls versión de ghost 4.41.3 ***"
-cypress run --config video=false
-
-echo "*** Elimina la carpeta para poner las imagenes de la ejecucion de ghost 4.41.3***"
-rm -rf $DIRECTORIOACTUAL/imagenesProcesoNormal
-mkdir $DIRECTORIOACTUAL/imagenesProcesoNormal
-cp -r $DIRECTORIOCYPRESS/cypress/screenshots $DIRECTORIOACTUAL/imagenesProcesoNormal/screenshots
-
+cd $DIRECTORIOACTUAL/monkey-cypress
+echo "*** Se comienza con la ejecución de las pruebas monkey de la versión de ghost 4.41.3 ***"
+cypress run

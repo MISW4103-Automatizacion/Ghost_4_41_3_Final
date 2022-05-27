@@ -20,3 +20,6 @@ npm install
 
 echo "Instalar el cliente de ghost"
 npm install ghost-cli@latest -g
+
+echo "Instalar cypress"
+npm install cypress --save-dev -g

@@ -6,7 +6,7 @@ const url = Cypress.config('baseUrl') || "http://localhost:2368/ghost/#/dashboar
 const appName = Cypress.env('appName')|| "Ghost 4.41.1"
 const events = Cypress.env('events')|| 400
 const delay = Cypress.env('delay') || 100
-var seed = Cypress.env('seed')
+var seed = Cypress.env('seed') || 1233
 
 const pct_clicks = Cypress.env('pctClicks') || 19
 const pct_scrolls = Cypress.env('pctScroll') || 17
@@ -500,7 +500,7 @@ function navBack(){
     cy.url().then((path)=>{
         let info = ""
         if(url!==path){
-            cy.go(-1)
+            //cy.go(-1)
             info = "Navigated 1 page back"
         }
         else info = "INVALID. Navigation stack empty"

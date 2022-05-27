@@ -1,9 +1,9 @@
 {
     "projectId":"TSDL-Monkey-with-cypress",
-    "baseUrl":"http://localhost:2368/ghost/#/dashboard",
+    "baseUrl":"http://localhost:2369/ghost/#/dashboard",
     "env":{
         "appName":"App prueba",
-        "events":1000,
+        "events":400,
         "delay":30,
         "seed":1234,
         "pctClicks":19,
