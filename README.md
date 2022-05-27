@@ -38,4 +38,4 @@
 | -------------------- | ----------------------------------- |------|
 | Proceso normal              | ./ejecutar_proceso_normal.sh | cd cypress/test/cypress/screenshots |
 | Proceso reconocimiento             | ./ejecutar_proceso_monkey.sh |cd monkey-cypress/cypress/videos/monkey |
-| Proceso de regresión visual | ejecutarRegresionVisualCypress.sh | cd reporteFinal_Cypress|
+| Proceso de regresión visual | ./ejecutarRegresionVisualCypress.sh | cd reporteFinal_Cypress|
