@@ -64,4 +64,4 @@ Una vez comience el proceso debe dejar que termine ya que esto puede alterar el 
 | -------------------- | ----------------------------------- |------|----|
 | Proceso E2E y aceptación              | ./ejecutar_proceso_normal.sh | cd imagenesProcesoNormal/screenshots |  |
 | Proceso reconocimiento monkey            | ./ejecutar_proceso_monkey.sh |cd monkey-cypress/results y cd monkey-cypress/cypress/videos/monkey | 120 minutos |
-| Proceso de regresión visual resemble | ./ejecutarRegresionVisualCypress.sh | cd reporteFinal_Cypress| 10 minutos |
+| Proceso de regresión visual resemble | ./ejecutarRegresionVisualCypress.sh | cd reporteFinal_Cypress| 5 minutos |
