@@ -57,7 +57,7 @@ rm -rf $DIRECTORIOACTUAL/ghost_4.30.0
 echo "*** Elimina la carpeta para poner las evidencias de la ejecucion de ghost 4.41.3***"
 rm -rf $DIRECTORIOACTUAL/resultadoMonkey
 mkdir $DIRECTORIOACTUAL/resultadoMonkey
-cp -r $DIRECTORIOACTUAL/monkey-cypress/result $DIRECTORIOACTUAL/resultadoMonkey
+cp -r $DIRECTORIOACTUAL/monkey-cypress/results $DIRECTORIOACTUAL/resultadoMonkey
 cp -r $DIRECTORIOACTUAL/monkey-cypress/cypress/videos/monkey $DIRECTORIOACTUAL/resultadoMonkey
 
 echo "*** Finaliza el reporte ***"
