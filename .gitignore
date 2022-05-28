@@ -20,3 +20,5 @@ imagenesProcesoNormal
 monkey-cypress/node_modules
 monkey-cypress/results
 reporteFinal_Cypress
+resultadoMonkey
+monkey-cypress/results/monkey-execution.html
